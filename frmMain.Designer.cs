@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnAdicionarItem = new System.Windows.Forms.Button();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.txtTotalIPIItem = new System.Windows.Forms.TextBox();
             this.lblTotalIPIItem = new System.Windows.Forms.Label();
@@ -63,9 +65,8 @@
             this.txtTotalICMS = new System.Windows.Forms.TextBox();
             this.lblTotalICMS = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.lvwItensPedido = new System.Windows.Forms.ListView();
             this.btnLimpar = new System.Windows.Forms.Button();
-            this.btnAdicionarItem = new System.Windows.Forms.Button();
+            this.lvwItensPedido = new System.Windows.Forms.ListView();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -102,6 +103,16 @@
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Itens do Pedido";
+            // 
+            // btnAdicionarItem
+            // 
+            this.btnAdicionarItem.Location = new System.Drawing.Point(441, 175);
+            this.btnAdicionarItem.Name = "btnAdicionarItem";
+            this.btnAdicionarItem.Size = new System.Drawing.Size(119, 23);
+            this.btnAdicionarItem.TabIndex = 20;
+            this.btnAdicionarItem.Text = "&Adicionar Item";
+            this.btnAdicionarItem.UseVisualStyleBackColor = true;
+            this.btnAdicionarItem.Click += new System.EventHandler(this.btnAdicionarItem_Click);
             // 
             // btnCalcular
             // 
@@ -415,16 +426,6 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Itens do Pedido";
             // 
-            // lvwItensPedido
-            // 
-            this.lvwItensPedido.GridLines = true;
-            this.lvwItensPedido.Location = new System.Drawing.Point(10, 20);
-            this.lvwItensPedido.MultiSelect = false;
-            this.lvwItensPedido.Name = "lvwItensPedido";
-            this.lvwItensPedido.Size = new System.Drawing.Size(694, 170);
-            this.lvwItensPedido.TabIndex = 0;
-            this.lvwItensPedido.UseCompatibleStateImageBehavior = false;
-            // 
             // btnLimpar
             // 
             this.btnLimpar.Location = new System.Drawing.Point(585, 196);
@@ -435,15 +436,15 @@
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
-            // btnAdicionarItem
+            // lvwItensPedido
             // 
-            this.btnAdicionarItem.Location = new System.Drawing.Point(441, 175);
-            this.btnAdicionarItem.Name = "btnAdicionarItem";
-            this.btnAdicionarItem.Size = new System.Drawing.Size(119, 23);
-            this.btnAdicionarItem.TabIndex = 20;
-            this.btnAdicionarItem.Text = "&Adicionar Item";
-            this.btnAdicionarItem.UseVisualStyleBackColor = true;
-            this.btnAdicionarItem.Click += new System.EventHandler(this.btnAdicionarItem_Click);
+            this.lvwItensPedido.GridLines = true;
+            this.lvwItensPedido.Location = new System.Drawing.Point(10, 20);
+            this.lvwItensPedido.MultiSelect = false;
+            this.lvwItensPedido.Name = "lvwItensPedido";
+            this.lvwItensPedido.Size = new System.Drawing.Size(694, 170);
+            this.lvwItensPedido.TabIndex = 0;
+            this.lvwItensPedido.UseCompatibleStateImageBehavior = false;
             // 
             // frmMain
             // 
@@ -455,6 +456,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmMain";

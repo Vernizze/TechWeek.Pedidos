@@ -217,7 +217,7 @@ namespace TechWeek.Pedidos
 
             this._conn.Initilize(new ConnectionParameters
             {
-                ServerAddress = "192.168.1.6",
+                ServerAddress = "192.168.1.11",
                 Port = 8081,
                 ServerRealm = "im_soft"
             });

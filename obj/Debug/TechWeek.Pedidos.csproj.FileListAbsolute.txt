@@ -40,3 +40,4 @@ E:\Projetos\TechWeek\TechWeek.Pedidos\TechWeek.Pedidos\obj\Debug\TechWeek.Pedido
 E:\Projetos\TechWeek\TechWeek.Pedidos\TechWeek.Pedidos\obj\Debug\TechWeek.Pedidos.csproj.GenerateResource.Cache
 E:\Projetos\TechWeek\TechWeek.Pedidos\TechWeek.Pedidos\obj\Debug\TechWeek.Pedidos.exe
 E:\Projetos\TechWeek\TechWeek.Pedidos\TechWeek.Pedidos\obj\Debug\TechWeek.Pedidos.pdb
+E:\Projetos\TechWeek\TechWeek.Pedidos\TechWeek.Pedidos\obj\Debug\TechWeek.Pedidos.csprojResolveAssemblyReference.cache
